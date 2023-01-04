@@ -11,4 +11,24 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="message_xml">Messages</string>
+
+    <string name="start">Tap an item from action bar menu</string>
+    <string name="link">The Link was clicked</string>
+    <string name="logoff">Logoff was clicked</string>
+    <string name="profile">Profile Icon was clicked</string>
+    <string name="refresh">Refresh Icon was clicked</string>
+    <string name="settings_xml">Settings</string>
+    <string name="refresh_xml">Refresh</string>
+    <string name="log_xml">Log Off</string>
+    <string name="profile_xml">Profile Page</string>
+    <string name="linked">Linked Accounts</string>
+    <string name="movTitle">Movies Screen</string>
+    <string name="gameTitle">Games Screen</string>
+    <string name="tvTitle">TV Screen</string>
+
+    <string-array name="tabTitles">
+        <item>Top TV Shows</item>
+        <item>Top Games</item>
+        <item>Top Movies</item>
+    </string-array>
 </resources>
