@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821086348682",
+    "project_id": "newton-a03fc",
+    "storage_bucket": "newton-a03fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821086348682:android:9ab1f4f7137e6cbe181473",
+        "android_client_info": {
+          "package_name": "com.example.newton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821086348682-cp4rit58hn0t1cpnoc5mobaguovh4ucb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVAcJkPNfUG_tBwMhJoXrmhy6zdh4EiWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821086348682-cp4rit58hn0t1cpnoc5mobaguovh4ucb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
