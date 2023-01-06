@@ -27,8 +27,8 @@
     <string name="tvTitle">TV Screen</string>
 
     <string-array name="tabTitles">
-        <item>Top TV Shows</item>
-        <item>Top Games</item>
-        <item>Top Movies</item>
+        <item>For You</item>
+        <item>Breaking</item>
+        <item>Search</item>
     </string-array>
 </resources>

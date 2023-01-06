@@ -1,5 +1,6 @@
 package com.example.newton
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -28,6 +29,22 @@ class LoginActivity: AppCompatActivity() {
         registerBtn = findViewById(R.id.regBtn)
 
         registerBtn.setOnClickListener { v -> registerClick(v) }
+        loginBtn.setOnClickListener {v -> loginClick(v)}
+
+    }
+
+    fun loginClick(view: View) {
+        mAuth.signInWithEmailAndPassword(
+            emailText.text.toString(),
+            passwordText.text.toString()).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                update()
+                val newIntent = Intent(this, MainActivity::class.java)
+                startActivity(newIntent)
+            } else {
+                displayMessage(loginBtn, "Login Fail")
+            }
+        }
 
     }
 
