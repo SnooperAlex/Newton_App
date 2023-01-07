@@ -31,4 +31,6 @@
         <item>Breaking</item>
         <item>Search</item>
     </string-array>
+
+    <string name="api_key">f6bb2b46ff794c89a5ad68fdcb4f5c2e</string>
 </resources>

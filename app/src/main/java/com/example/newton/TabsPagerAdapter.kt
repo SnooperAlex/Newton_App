@@ -3,19 +3,19 @@ package com.example.newton.adapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.newton.GamesFragment
-import com.example.newton.MoviesFragment
-import com.example.newton.TVFragment
+import com.example.newton.ForYouFragment
+import com.example.newton.SearchFragment
+import com.example.newton.BreakingFragment
 
 class TabAdapter (activity: AppCompatActivity) : FragmentStateAdapter(activity) {
 
     override fun createFragment(index: Int): Fragment {
         when (index) {
-            0 -> return TVFragment()
-            1 -> return GamesFragment()
-            2 -> return MoviesFragment()
+            0 -> return ForYouFragment()
+            1 -> return BreakingFragment()
+            2 -> return SearchFragment()
         }
-        return TVFragment()
+        return BreakingFragment()
     }
 
     // get item count - equal to number of tabs
