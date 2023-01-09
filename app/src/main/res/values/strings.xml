@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Newton</string>
+    <string name="slogan">Where you find a ton of news</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -7,30 +8,26 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="login">Log In</string>
+    <string name="pswd">Password</string>
+    <string name="email">E-mail</string>
+    <string name="reg">Register</string>
+    <string name="frgt">Forgot Password</string>
+    <string name="submit">Submit</string>
 
-    <string name="message_xml">Messages</string>
-
-    <string name="start">Tap an item from action bar menu</string>
-    <string name="link">The Link was clicked</string>
-    <string name="logoff">Logoff was clicked</string>
-    <string name="profile">Profile Icon was clicked</string>
-    <string name="refresh">Refresh Icon was clicked</string>
-    <string name="settings_xml">Settings</string>
-    <string name="refresh_xml">Refresh</string>
-    <string name="log_xml">Log Off</string>
-    <string name="profile_xml">Profile Page</string>
-    <string name="linked">Linked Accounts</string>
-    <string name="movTitle">Movies Screen</string>
-    <string name="gameTitle">Games Screen</string>
-    <string name="tvTitle">TV Screen</string>
-
+    <string name="titletest">Example Title</string>
+    <string name="readMore">Read More...</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
     <string-array name="tabTitles">
         <item>For You</item>
         <item>Breaking</item>
         <item>Search</item>
     </string-array>
 
+    <string name="search">Search News...</string>
+
+    <string name="topictext">Choose the topics you are interested in</string>
+
     <string name="api_key">f6bb2b46ff794c89a5ad68fdcb4f5c2e</string>
+
 </resources>

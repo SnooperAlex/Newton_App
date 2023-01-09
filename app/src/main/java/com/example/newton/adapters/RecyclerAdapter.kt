@@ -3,16 +3,16 @@ package com.example.newton.adapters
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newton.R
+
 
 class RecyclerAdapter (
     private var titles: List<String>,
@@ -26,6 +26,8 @@ class RecyclerAdapter (
         val newsDescription: TextView = newsView.findViewById(R.id.news_description)
         val newsImage: ImageView = newsView.findViewById(R.id.imageView)
 
+        val shareBtn: ImageButton = newsView.findViewById(R.id.shareBtn)
+
         init {
             newsView.setOnClickListener{v: View ->
                 val position: Int = adapterPosition
@@ -33,6 +35,15 @@ class RecyclerAdapter (
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(links[position])
                 startActivity(itemView.context, intent, null)
+            }
+
+            shareBtn.setOnClickListener{v: View->
+                val i = Intent(Intent.ACTION_SEND)
+                i.type = "text/plain"
+                i.putExtra(Intent.EXTRA_TEXT, links[position])
+
+                val chooser = Intent.createChooser(i, "Share using...")
+                startActivity(itemView.context, chooser, null)
             }
         }
     }
@@ -49,6 +60,9 @@ class RecyclerAdapter (
         holder.newsTitle.text = titles[position]
         holder.newsDescription.text = description[position]
 
+        Glide.with(holder.newsImage)
+            .load(images[position])
+            .into(holder.newsImage)
     }
 
 

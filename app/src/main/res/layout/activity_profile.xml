@@ -20,12 +20,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="165dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="195dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
         android:text="USERNAME"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -48,7 +49,7 @@
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/topics"
         tools:layout_editor_absoluteX="0dp" />
 
     <View
@@ -78,20 +79,20 @@
     <Button
         android:id="@+id/button4"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="175dp"
-        android:layout_height="54dp"
+        android:layout_width="201dp"
+        android:layout_height="53dp"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/ic_bookmark"
         android:text="Bookmarks"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/topics"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="133dp"
         android:layout_height="46dp"
@@ -108,20 +109,20 @@
     <Button
         android:id="@+id/button5"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="252dp"
-        android:layout_height="52dp"
+        android:layout_width="298dp"
+        android:layout_height="54dp"
         android:layout_marginTop="12dp"
         android:drawableLeft="@drawable/ic_info"
         android:text="Help and Feedback"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/logOutBtn"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="144dp"
         android:layout_height="59dp"

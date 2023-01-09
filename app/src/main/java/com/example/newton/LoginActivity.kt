@@ -1,5 +1,6 @@
 package com.example.newton
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -31,6 +32,7 @@ class LoginActivity: AppCompatActivity() {
         registerBtn.setOnClickListener { v -> registerClick(v) }
         loginBtn.setOnClickListener {v -> loginClick(v)}
 
+
     }
 
     fun loginClick(view: View) {
@@ -38,6 +40,11 @@ class LoginActivity: AppCompatActivity() {
             emailText.text.toString(),
             passwordText.text.toString()).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
+                val sharedPrefs = getSharedPreferences("prod", Context.MODE_PRIVATE)
+                with(sharedPrefs.edit()){
+                    putBoolean("is_signed_in", true)
+                    commit()
+                }
                 update()
                 val newIntent = Intent(this, MainActivity::class.java)
                 startActivity(newIntent)
@@ -61,17 +68,18 @@ class LoginActivity: AppCompatActivity() {
 
     fun registerClick(view: View) {
         if(mAuth.currentUser != null){
-            displayMessage(view, "Blablabla")
+            displayMessage(view, "Registrations failed")
         }
         else {
             mAuth.createUserWithEmailAndPassword(
                 emailText.text.toString(), passwordText.text.toString()
             ).addOnCompleteListener(this) {task ->
                 if (task.isSuccessful){
+                    displayMessage(loginBtn, "Registration succeded")
                     update()
                 }
                 else{
-                    displayMessage(loginBtn, "egergrgtrgtrg")
+                    displayMessage(loginBtn, "Registration failed")
                 }
             }
         }
